@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+body{
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(45, 57, 80);
+}
+$background: #F6F9F9;
+$fontcolor: rgb(45, 57, 80);
+$color: #15a4fa;
+%gradient{/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0920ed+3,60a2c4+57,60a2c4+57,72a7c1+91&0.67+0,1+100 */
+    background: -moz-linear-gradient(left,  rgba(9,32,237,0.67) 0%, rgba(9,32,237,0.68) 3%, rgba(96,162,196,0.86) 57%, rgba(114,167,193,0.97) 91%, rgba(114,167,193,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(9,32,237,0.67) 0%,rgba(9,32,237,0.68) 3%,rgba(96,162,196,0.86) 57%,rgba(114,167,193,0.97) 91%,rgba(114,167,193,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(9,32,237,0.67) 0%,rgba(9,32,237,0.68) 3%,rgba(96,162,196,0.86) 57%,rgba(114,167,193,0.97) 91%,rgba(114,167,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab0920ed', endColorstr='#72a7c1',GradientType=1 ); /* IE6-9 */
+    }
+%transition{
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+.navbar{
+    background-color: #F6F9F9;
+    padding: 30px 0;
+    
+        .navbar-nav{
+
+            .nav-item{
+
+                .nav-link{
+                    color: rgb(45, 57, 80);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    @extend %transition;
+                    &:hover{
+                        color: #15a4fa;
+                    }
+                }
+
+                }
+        }
+    }  
+
+
+.banner-section{
+    background-image: url(../img/Strict.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .click{
+        position: absolute;
+        color: #fff;
+        bottom: 20px;
+        font-size: 25px;
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+    .row{
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        h1{
+            font-size: 80px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+
+        }
+        span{
+            background-color: $color;
+            min-height: 3px;
+            display: block;
+            margin-bottom: 20px;
+    
+        }
+        p{
+           color: #fff;
+           font-size: 15px;
+    
+        }
+
+    }
+  
+
+}
+.btn-custom{
+    border: 1px solid $color;
+    color: #fff;
+    padding: 10px 30px;
+    @extend %transition;
+    &:hover{
+        background-color: $color;
+        color: #fff;
+    }
+}
+.about_us{
+    background-color: $background;
+    text-align: center;
+    padding: 40px 0;
+    h2{
+        font-size: 30px;
+        font-weight: 600;
+
+    }
+}
+.service_section{
+    padding: 100px 0;
+    text-align: center;
+
+    .service{
+        .icon{
+            @extend %gradient;
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            margin: auto;
+            i{
+                text-shadow: 1px 1px 2px #2d3952;
+            }
+        }
+        h2{
+            font-size: 25px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        p{}
+    }
+}
+.gallery{
+    .row{
+        h1{}
+        p{
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+        .card{
+            position: relative;
+            overflow: hidden;
+            .cover{
+                position: absolute;
+                top: 0;
+                height: 0;
+                left: 0;
+                right: 0;
+                background: #1e90fff0;
+                opacity: .9;
+                transition: all .3s linear;
+                overflow: hidden;
+                .cover_icon{
+                    position: absolute;
+                    top: 45%;
+                    left: 45%;
+                    background: orange;
+                    padding: 10px 15px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $background;
+    padding: 50px 0;
+    p{
+        margin-bottom: 0;
+    }
+    ul{
+        li{
+            a{
+                margin-left: 10px;
+                background-color: $color;
+                color: #fff;
+                width: 30px;
+                height: 30px;
+                display: block;
+                text-align: center;
+                 border: 1px solid $color;
+                 @extend %transition;
+                &:hover{
+                            background-color: transparent;
+                            color: $color;
+                            
+                }
+            }
+        }
+    }
+}

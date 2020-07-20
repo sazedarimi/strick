@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+body {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2d3950; }
+
+.service_section .service .icon {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0920ed+3,60a2c4+57,60a2c4+57,72a7c1+91&0.67+0,1+100 */
+  background: -moz-linear-gradient(left, rgba(9, 32, 237, 0.67) 0%, rgba(9, 32, 237, 0.68) 3%, rgba(96, 162, 196, 0.86) 57%, rgba(114, 167, 193, 0.97) 91%, #72a7c1 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(9, 32, 237, 0.67) 0%, rgba(9, 32, 237, 0.68) 3%, rgba(96, 162, 196, 0.86) 57%, rgba(114, 167, 193, 0.97) 91%, #72a7c1 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(9, 32, 237, 0.67) 0%, rgba(9, 32, 237, 0.68) 3%, rgba(96, 162, 196, 0.86) 57%, rgba(114, 167, 193, 0.97) 91%, #72a7c1 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab0920ed', endColorstr='#72a7c1',GradientType=1 );
+  /* IE6-9 */ }
+
+.navbar .navbar-nav .nav-item .nav-link, .btn-custom, footer ul li a {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease; }
+
+.navbar {
+  background-color: #F6F9F9;
+  padding: 30px 0; }
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: #2d3950;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .navbar .navbar-nav .nav-item .nav-link:hover {
+      color: #15a4fa; }
+
+.banner-section {
+  background-image: url(../img/Strict.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .banner-section .click {
+    position: absolute;
+    color: #fff;
+    bottom: 20px;
+    font-size: 25px;
+    left: 50%;
+    transform: translate(-50%); }
+  .banner-section .row {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .banner-section .row h1 {
+      font-size: 80px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .banner-section .row span {
+      background-color: #15a4fa;
+      min-height: 3px;
+      display: block;
+      margin-bottom: 20px; }
+    .banner-section .row p {
+      color: #fff;
+      font-size: 15px; }
+
+.btn-custom {
+  border: 1px solid #15a4fa;
+  color: #fff;
+  padding: 10px 30px; }
+  .btn-custom:hover {
+    background-color: #15a4fa;
+    color: #fff; }
+
+.about_us {
+  background-color: #F6F9F9;
+  text-align: center;
+  padding: 40px 0; }
+  .about_us h2 {
+    font-size: 30px;
+    font-weight: 600; }
+
+.service_section {
+  padding: 100px 0;
+  text-align: center; }
+  .service_section .service .icon {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    margin: auto; }
+    .service_section .service .icon i {
+      text-shadow: 1px 1px 2px #2d3952; }
+  .service_section .service h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0; }
+
+.gallery .row p {
+  padding: 10px 0;
+  margin-bottom: 30px; }
+.gallery .row .card {
+  position: relative;
+  overflow: hidden; }
+  .gallery .row .card .cover {
+    position: absolute;
+    top: 0;
+    height: 0;
+    left: 0;
+    right: 0;
+    background: #1e90fff0;
+    opacity: .9;
+    transition: all .3s linear;
+    overflow: hidden; }
+    .gallery .row .card .cover .cover_icon {
+      position: absolute;
+      top: 45%;
+      left: 45%;
+      background: orange;
+      padding: 10px 15px;
+      color: #fff; }
+
+footer {
+  background-color: #F6F9F9;
+  padding: 50px 0; }
+  footer p {
+    margin-bottom: 0; }
+  footer ul li a {
+    margin-left: 10px;
+    background-color: #15a4fa;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    border: 1px solid #15a4fa; }
+    footer ul li a:hover {
+      background-color: transparent;
+      color: #15a4fa; }
+
+/*# sourceMappingURL=style.css.map */
